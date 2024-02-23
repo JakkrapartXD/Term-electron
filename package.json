@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start-electron": "electron .",
+    "package-mac": "npm run build  && electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "electron": "^29.0.1",
-    "electron-is-dev": "^3.0.1"
+    "electron-is-dev": "^3.0.1",
+    "electron-packager": "^17.1.2"
   }
 }
